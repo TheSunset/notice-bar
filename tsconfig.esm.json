@@ -1,0 +1,23 @@
+{
+	"compilerOptions": {
+		"rootDir": "./src",
+		"outDir": "./lib/esm",
+    "declaration": true,
+		"target": "ES5",
+		"lib": ["dom", "dom.iterable", "esnext"],
+		"allowJs": true,
+		"skipLibCheck": true,
+		"esModuleInterop": true,
+		"allowSyntheticDefaultImports": true,
+		"strict": true,
+		"forceConsistentCasingInFileNames": true,
+		"module": "ESNext",
+		"moduleResolution": "node",
+		"resolveJsonModule": true,
+		"isolatedModules": true,
+		"noEmit": false,
+		"jsx": "react",
+		"noFallthroughCasesInSwitch": true
+	},
+	"include": ["src", "sunset.d.ts"]
+}

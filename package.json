@@ -1,0 +1,91 @@
+{
+  "name": "@ximu/notice-bar",
+  "version": "1.0.6",
+  "homepage": "https://TheSunset.github.io/simple-carousel",
+  "description": "a react component of notice bar",
+  "main": "./dist/index.umd.js",
+  "module": "./dist/index.esm.js",
+  "files": [
+    "examples",
+    "package.json",
+    "dist"
+  ],
+  "keywords": [
+    "react",
+    "components",
+    "notice-bar"
+  ],
+  "scripts": {
+    "start": "webpack-dev-server --mode development",
+    "build:demo": "webpack --mode production --progress",
+    "build:tsc-cjs": "tsc -b tsconfig.cjs.json",
+    "build:tsc-esm": "tsc -b tsconfig.esm.json",
+    "build:tsc": "tsc",
+    "compile:sass": "sass src/:lib/cjs/",
+    "clean": "rm -rf lib && mkdir lib",
+    "babel:compile": "yarn run clean && babel src --out-dir lib --copy-files",
+    "build:rollup": "rm -rf dist && mkdir dist && rollup -c",
+    "deploy": "gh-pages -d examples/dist"
+  },
+  "author": "snow_sunset",
+  "license": "ISC",
+  "peerDependencies": {
+    "react": "^16.3.0",
+    "react-dom": "^16.3.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.0",
+    "@babel/core": "^7.17.2",
+    "@babel/node": "^7.16.8",
+    "@babel/plugin-external-helpers": "^7.16.7",
+    "@babel/plugin-proposal-object-rest-spread": "^7.16.7",
+    "@babel/plugin-syntax-object-rest-spread": "^7.8.3",
+    "@babel/plugin-transform-react-jsx": "^7.16.7",
+    "@babel/plugin-transform-typescript": "^7.18.6",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "@babel/preset-typescript": "^7.18.6",
+    "@babel/runtime": "^7.17.2",
+    "@rollup/plugin-image": "^2.1.1",
+    "@rollup/plugin-typescript": "^8.3.0",
+    "@types/react": "^18.0.14",
+    "@types/react-dom": "^18.0.5",
+    "@types/styled-components": "^5.1.22",
+    "autoprefixer": "^10.4.2",
+    "babel-loader": "^8.2.5",
+    "css-loader": "^6.6.0",
+    "file-loader": "^6.2.0",
+    "gh-pages": "^3.2.3",
+    "html-webpack-plugin": "^5.5.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "rollup": "^2.67.1",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-copy": "^3.4.0",
+    "rollup-plugin-livereload": "^2.0.5",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-serve": "^1.1.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-typescript2": "^0.31.2",
+    "rollup-plugin-uglify": "^6.0.4",
+    "sass": "^1.49.7",
+    "sass-loader": "^12.4.0",
+    "style-loader": "^3.3.1",
+    "ts-loader": "^9.2.6",
+    "typescript": "^4.5.5",
+    "typescript-plugin-css-modules": "^3.4.0",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.68.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.7.4"
+  },
+  "dependencies": {
+    "styled-components": "^5.3.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TheSunset/simple-carousel"
+  }
+}
