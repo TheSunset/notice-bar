@@ -25,7 +25,7 @@
     "clean": "rm -rf lib && mkdir lib",
     "babel:compile": "yarn run clean && babel src --out-dir lib --copy-files",
     "build:rollup": "rm -rf dist && mkdir dist && rollup -c",
-    "deploy": "gh-pages -d examples/dist"
+    "deploy": "gh-pages -d demo"
   },
   "author": "snow_sunset",
   "license": "ISC",
