@@ -1,29 +1,28 @@
 .notice-bar {
-	height: 100%;
-	.notice-wrap {
-		display: flex;
-		align-items: center;
-		height: 36px;
-		background-color: #f4f9ff;
-		border-radius: 20px;
-		padding: 0 24px;
-		img {
-			width: 28px;
-			height: 28px;
-		}
-		.tip-content {
-			height: 30px;
-			line-height: 30px;
-			overflow: hidden;
-			margin-left: 8px;
-			.tip {
-				margin-bottom: initial;
-				font-size: 16px;
-				text-align: left;
-				color: rgba(12, 37, 65, 1);
-				transition-property: transform;
-				transition-timing-function: linear;
-			}
+	display: flex;
+	align-items: center;
+	height: 36px;
+	background-color: #f4f9ff;
+	border-radius: 20px;
+	padding: 0 24px;
+	img {
+		width: 28px;
+		height: 28px;
+	}
+	.tip-content {
+		height: 30px;
+		line-height: 30px;
+		overflow: hidden;
+		margin-left: 8px;
+		.tip {
+			margin-bottom: initial;
+			font-size: 16px;
+			text-align: left;
+			color: rgba(12, 37, 65, 1);
+			transition-property: transform;
+			transition-timing-function: linear;
+			list-style: none;
+			padding: 0;
 		}
 	}
 }
