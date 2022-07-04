@@ -1,6 +1,6 @@
 {
   "name": "@ximu/notice-bar",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "homepage": "https://TheSunset.github.io/notice-bar",
   "description": "a react component of notice bar",
   "main": "./dist/index.umd.js",
