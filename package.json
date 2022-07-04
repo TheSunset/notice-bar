@@ -1,7 +1,7 @@
 {
   "name": "@ximu/notice-bar",
-  "version": "1.0.6",
-  "homepage": "https://TheSunset.github.io/simple-carousel",
+  "version": "1.0.1",
+  "homepage": "https://TheSunset.github.io/notice-bar",
   "description": "a react component of notice bar",
   "main": "./dist/index.umd.js",
   "module": "./dist/index.esm.js",
@@ -86,6 +86,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/TheSunset/simple-carousel"
+    "url": "https://github.com/TheSunset/notice-bar"
   }
 }
