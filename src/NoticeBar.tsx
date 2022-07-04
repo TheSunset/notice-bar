@@ -1,5 +1,5 @@
-import React, { useEffect, useRef, useState } from "react";
-import { CSSProperties } from "styled-components";
+import React, { useEffect, useRef, useMemo } from "react";
+import { Property } from "csstype";
 import style from "./NoticeBar.module.scss";
 
 interface IProps {
@@ -8,14 +8,16 @@ interface IProps {
   newLine?: boolean;
 }
 
-const ellipsis1 = {
-	whiteSpace: "normal" as WhiteSpace,
+const ellipsis = {
+	whiteSpace: "nowrap" as Property.WhiteSpace,
 	overflow: "hidden",
 	textOverflow: "ellipsis"
 };
 function NoticeBar(props: IProps): JSX.Element {
 	const noticeMessageRef = useRef<HTMLUListElement>(null);
-
+	const list = useMemo(() => {
+		return props.message.length ? props.message.concat(props.message[0]) : []
+	}, [])
 	useEffect(() => {
 		const len = props.message.length;
 		const wrapNode = noticeMessageRef.current;
@@ -43,15 +45,15 @@ function NoticeBar(props: IProps): JSX.Element {
 					className={style["tip"]}
 					ref={noticeMessageRef}
 					onTransitionEnd={noticeTransitionEndHandler}
+					
 				>
-					{props.message.map<JSX.Element>((item: string, index: number) => {
+					{list.map<JSX.Element>((item: string, index: number) => {
 						return (
-							<li style={ellipsis1} key={index}>
+							<li style={!props.newLine ? ellipsis : null} key={index}>
 								{item}
 							</li>
 						);
 					})}
-					{props.message.length ? <li>{props.message[0]}</li> : null}
 				</ul>
 			</div>
 		</div>
