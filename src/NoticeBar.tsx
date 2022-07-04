@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
+import { CSSProperties } from "styled-components";
 import style from "./NoticeBar.module.scss";
 
 interface IProps {
@@ -7,8 +8,8 @@ interface IProps {
   newLine?: boolean;
 }
 
-const ellipsis = {
-	whiteSpace: "nowrap",
+const ellipsis1 = {
+	whiteSpace: "normal" as WhiteSpace,
 	overflow: "hidden",
 	textOverflow: "ellipsis"
 };
@@ -45,7 +46,7 @@ function NoticeBar(props: IProps): JSX.Element {
 				>
 					{props.message.map<JSX.Element>((item: string, index: number) => {
 						return (
-							<li style={{...ellipsis}} key={index}>
+							<li style={ellipsis1} key={index}>
 								{item}
 							</li>
 						);
