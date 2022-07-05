@@ -1,8 +1,12 @@
 import React from "react";
 import { render } from "react-dom";
 
+// npm 包
+import NoticeBar from "@ximu/notice-bar";
+import "@ximu/notice-bar/dist/index.esm.css";
+
 // 源文件
-import NoticeBar from "./src/NoticeBar";
+// import NoticeBar from "./src/NoticeBar";
 
 // 测试打包后的组件
 // import NoticeBar from "./dist/index.esm.js";

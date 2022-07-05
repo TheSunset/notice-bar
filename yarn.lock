@@ -1529,6 +1529,13 @@
   resolved "https://registry.npmmirror.com/@webpack-cli/serve/-/serve-1.7.0.tgz#e1993689ac42d2b16e9194376cfb6753f6254db1"
   integrity sha512-oxnCNGj88fL+xzV+dacXs44HcDwf1ovs3AuEzvP7mqXw7fQntqIhQ1BRmynh4qEKQSSSRSWVyXRjmTbZIX9V2Q==
 
+"@ximu/notice-bar@^1.0.3":
+  version "1.0.3"
+  resolved "https://registry.npmjs.org/@ximu/notice-bar/-/notice-bar-1.0.3.tgz#d1bbdd2df3177ea11cb9f5cf4dc913ab37345189"
+  integrity sha512-9n5n2/dsNNL/xRSuDAVEaAOvJPn+EvnEVJVjvzsFhxTju02arr1wXU+VH/UQEnljX99yj1oBAXwozPSQYXCFiQ==
+  dependencies:
+    styled-components "^5.3.3"
+
 "@xtuc/ieee754@^1.2.0":
   version "1.2.0"
   resolved "https://registry.npmmirror.com/@xtuc/ieee754/-/ieee754-1.2.0.tgz#eef014a3145ae477a1cbc00cd1e552336dceb790"
